@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Naveen Raj</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="theme-toggle" class="theme-toggle">🌙</div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I'm a Web Developer, and this is my portfolio website.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I’m Naveen Raj, a student pursuing Artificial Intelligence and Data Science Engineering. I’m passionate about technology, problem-solving, and innovation. As a beginner in web development, I’m eager to enhance my skills in front-end and back-end technologies to build creative and efficient web solutions.</p>
+            <div class="skills">
+                <div class="skill">
+                    <h3>Skill 1</h3>
+                    <div class="progress-bar" data-skill="90%"></div>
+                </div>
+                <div class="skill">
+                    <h3>Skill 2</h3>
+                    <div class="progress-bar" data-skill="80%"></div>
+                </div>
+                <!-- Add more skills as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div id="projects-container" class="projects-container">
+                <!-- Dynamic project cards will be rendered here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form" class="contact-form">
+                <input type="text" name="name" placeholder="Naveen Raj" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="footer-year"></span> Naveen Raj. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Project Details -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content" id="modal-content">
+            <!-- Dynamic content will be injected here -->
+        </div>
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
